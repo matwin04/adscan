@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+</head>
+<body>
+{{> navbar}}
+<h1>{{title}}</h1>
+<table>
+    <thead>
+    <tr>
+        <th>Post</th>
+        <th>Time</th>
+        <th>Link</th>
+    </tr>
+    </thead>
+    <tbody>
+    {{#each liked_posts}}
+    <tr>
+        <td>{{postTitle}}</td>
+        <td>{{time}}</td>
+        <td><a href="{{link}}" target="_blank">View Post</a></td>
+    </tr>
+    {{/each}}
+    </tbody>
+</table>
+</body>
+</html>

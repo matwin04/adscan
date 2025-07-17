@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Instagram Activity Viewer</title>
+    <link rel="stylesheet" href="/public/styles.css">
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 2em;
+            background: #fafafa;
+        }
+        h1 {
+            margin-bottom: 0.5em;
+        }
+        h2 {
+            margin-top: 2em;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 0.3em;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 2em;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+        th {
+            background-color: #f0f0f0;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Instagram Activity Viewer</h1>
+{{> navbar}}
+
+<h2>Directory</h2>
+<h3>Ads Information</h3>
+<h2>Ads Information</h2>
+
+<a href="/ads_information/videos_watched">Videos Watched</a><br>
+<a href="/ads_information/ads_clicked">Ads Clicked</a><br>
+<a href="/ads_information/ads_viewed">Ads Viewed</a><br>
+<h3>Your instagram Activity</h3>
+<a href="/activity/liked_posts">Liked Posts</a><br>
+<a href="/activity/saved_posts">Saved Posts</a><br>
+</body>
+</html>
